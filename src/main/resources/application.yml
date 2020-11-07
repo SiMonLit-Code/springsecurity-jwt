@@ -1,0 +1,21 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /security
+
+
+jwt:
+  route:
+    authentication:
+      path: /auth
+  header: Authorization
+  expiration: 60000
+  secret: hello.Azhen
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.96.32.6:3306/bank?useUnicode=true&characterEncoding=UTF-8
+    password: 123456
+    username: root
